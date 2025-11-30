@@ -5,4 +5,4 @@ Here we focus on:
 - Autonomy
 - Simulation
 - Computer Vision
-- Robotic movement
+- Robotic Arm movement for now
