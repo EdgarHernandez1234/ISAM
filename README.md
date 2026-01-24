@@ -3,6 +3,6 @@
 This ALAM's (Automated Lunar Adaptive Mate) contribution to ISAM 2025-2026.
 Here we focus on:
 - Autonomy
-- Simulation
+- Embedded systems
 - Computer Vision
 - Robotic Arm movement for now
