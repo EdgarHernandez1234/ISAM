@@ -1,0 +1,3 @@
+Using RELLIS 3D Data for pretrained model/initial demoing
+
+Go be replaced with live data once we have full connection to devices
