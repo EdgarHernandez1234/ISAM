@@ -5,4 +5,5 @@ Here we focus on:
 - Autonomy
 - Embedded systems
 - Computer Vision
-- Robotic Arm movement for now
+- Robotic Arm movement
+- Failsafe measures for said robotic arm and the connected items
