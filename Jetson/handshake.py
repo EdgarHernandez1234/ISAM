@@ -3,7 +3,7 @@ import time
 import threading
 
 # Initialize Serial to Arduino
-ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyUSB*', 9600, timeout=1)
 
 def send_heartbeat():
     while True:
