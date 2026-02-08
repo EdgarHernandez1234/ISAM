@@ -1,0 +1,8 @@
+[
+  "tests/test_camera_provider.py::test_build_pipeline_contains_nvargus",
+  "tests/test_core_and_rl.py::test_step_with_safety_overrides_close_hazard",
+  "tests/test_core_and_rl.py::test_step_with_safety_return_home_on_low_health",
+  "tests/test_demo_decider_smoke.py::test_demo_decider_check_rl_runs",
+  "tests/test_lidar_provider.py::test_min_distance_forward_cone_filters_invalid",
+  "tests/test_lidar_provider.py::test_min_distance_none_when_no_valid"
+]
