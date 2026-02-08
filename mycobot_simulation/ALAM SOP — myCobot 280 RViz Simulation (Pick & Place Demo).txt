@@ -1,0 +1,170 @@
+﻿Standard Operating Procedure
+Platform: Windows 11 + WSL2 (Ubuntu 22.04) + ROS 2 Humble
+Audience: ISAM / ALAM software team
+Purpose: Run a clean, smooth RViz simulation of the myCobot 280 and execute an animated “pick up / put down regolith” demo.
+________________
+
+
+Golden Rule (READ FIRST)
+Only ONE /joint_states publisher may run at a time.
+ Running the GUI sliders and a script simultaneously will cause jitter.
+________________
+
+
+SOP Overview
+* Terminal / Tab A: Robot visualization (RViz + TF + URDF)
+
+* Terminal / Tab B: ALAM animation script (publishes /joint_states)
+
+* Fixed Frame: g_base
+
+________________
+
+
+STEP 1 — Open WSL & Create Two Tabs
+   1. Open Ubuntu 22.04 (via Start Menu or Windows Terminal).
+
+   2. Open a second tab (Ctrl + Shift + T).
+
+Screenshot Callout [A]
+ Windows Terminal showing two Ubuntu tabs labeled “Tab A” and “Tab B”
+________________
+
+
+STEP 2 — Tab A: Start RViz + myCobot Model
+In Tab A, run:
+source /opt/ros/humble/setup.bash
+source ~/colcon_ws/install/setup.bash
+ros2 launch mycobot_280 simple_gui.launch.py
+
+
+Expected:
+      * RViz opens
+
+      * Robot model appears
+
+      * TF is active
+
+Screenshot Callout [B]
+ RViz window open with grid and myCobot visible
+________________
+
+
+STEP 3 — RViz Configuration (Required)
+In RViz (left panel):
+         1. Global Options → Fixed Frame → g_base
+
+         2. Ensure displays:
+
+            * ☑ Grid
+
+            * ☑ TF
+
+            * ☑ RobotModel
+
+Status should read: Global Status: OK
+Screenshot Callout [C]
+ RViz “Displays” panel with Fixed Frame set to g_base and green checkmarks
+________________
+
+
+STEP 4 — Tab B: Run the ALAM Pick/Place Animation
+⚠️ Before continuing:
+ Make sure NO joint_state_publisher_gui or slider control is running.
+In Tab B, run:
+source /opt/ros/humble/setup.bash
+source ~/colcon_ws/install/setup.bash
+cd ~
+python3 alam_pick_place_demo.py
+
+
+Expected motion loop:
+               * Home → Approach → Scoop → Lift → Move → Dump → Return Home
+
+Screenshot Callout [D]
+ RViz showing arm mid-scoop or lift motion
+________________
+
+
+STEP 5 — Verify System Health (30-second check)
+Run in either tab:
+ros2 topic list | grep joint_states
+
+
+Expected:
+/joint_states
+
+
+Check publisher count:
+ros2 topic info /joint_states -v
+
+
+Expected:
+Publisher count: 1
+
+
+Screenshot Callout [E]
+ Terminal output showing “Publisher count: 1”
+________________
+
+
+STEP 6 — Clean Shutdown
+                  1. Tab B: Ctrl + C (stop animation script)
+
+                  2. Tab A: Ctrl + C (stop RViz launch)
+
+                  3. Close RViz window
+
+________________
+
+
+Common Issues & Fixes
+❌ Arm jerks or snaps
+Cause: Multiple /joint_states publishers
+Fix: Stop GUI sliders or other scripts.
+ros2 topic info /joint_states -v
+
+
+________________
+
+
+❌ RViz says “Frame does not exist”
+Fix:
+ Set Fixed Frame = g_base
+________________
+
+
+❌ RobotModel shows transform errors
+Cause: /joint_states not running
+Fix: Start either:
+                     * the animation script or
+
+                     * joint_state_publisher_gui (not both)
+
+________________
+
+
+Team Operating Modes
+Mode
+	What Runs
+	Purpose
+	Manual Test
+	joint_state_publisher_gui
+	Hand-move joints
+	Demo / Integration
+	alam_pick_place_demo.py
+	Rover → arm logic
+	❌ Invalid
+	GUI + Script
+	Causes jitter
+	________________
+
+
+Why This Matters for ALAM
+                        * Matches real-arm control flow (single state source)
+
+                        * Clean handoff to future controllers / MoveIt
+
+                        * Stable demo for reviews and presentations
+
+                        * Safe environment to test rover_learner triggers
