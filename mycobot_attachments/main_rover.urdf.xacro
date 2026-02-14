@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- 
+<origin xyz = "0.0 0 -0.012 " rpy = " 0 0 0"/>
+
+If you load the model and the gripper looks like it's "floating" slightly away from the wrist or is shoved too far inside it, you just need to adjust the <origin> in the arm_to_gripper joint inside the main_rover.urdf.xacro file above.
+
+To move it out: Increase the z value (e.g., xyz="0 0 0.02").
+
+To rotate it: If the "scoop" is facing the wrong way, change the rpy (Roll, Pitch, Yaw).
+
+-->
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycobot_rover">
+
+  <xacro:include filename="/home/isam/Desktop/mycobot_attachments/mycobot_final.urdf" />
+
+  <xacro:include filename="/home/isam/Desktop/mycobot_attachments/mycobot_adaptive_gripper.urdf" />
+
+  <joint name="arm_to_gripper" type="fixed">
+    <parent link="joint6"/>
+    <child link="gripper_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+  </joint>
+
+</robot>
