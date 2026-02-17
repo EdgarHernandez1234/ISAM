@@ -1,4 +1,4 @@
-import serial
+import serial # This one goes with the watchdog_timer.py in arduino_file
 import time
 import threading
 
