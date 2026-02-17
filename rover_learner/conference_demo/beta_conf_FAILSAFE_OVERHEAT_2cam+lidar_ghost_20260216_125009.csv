@@ -1,0 +1,125 @@
+ts,frame_id,pred_class,pred_conf,distance_m,proposed_action,final_action,reason,safety_json,human_label
+0.0023872852325439453,0,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.08681941032409668,1,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.16879773139953613,2,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.2514004707336426,3,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.3354346752166748,4,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.41907572746276855,5,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.5020112991333008,6,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.5856537818908691,7,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.669539213180542,8,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.751906156539917,9,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.8357279300689697,10,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.9192984104156494,11,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.0026731491088867,12,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.0858638286590576,13,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.1696503162384033,14,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.253082513809204,15,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.3362233638763428,16,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.4206299781799316,17,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.504016399383545,18,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.5868070125579834,19,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.6701209545135498,20,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.7536108493804932,21,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.8372912406921387,22,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.92073655128479,23,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.0045006275177,24,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.087883234024048,25,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.1713430881500244,26,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.2547495365142822,27,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.3381876945495605,28,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.4217474460601807,29,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.5050973892211914,30,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.5887153148651123,31,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.671992301940918,32,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.7555041313171387,33,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.8392527103424072,34,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.922805070877075,35,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.005631446838379,36,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.0894510746002197,37,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.173154354095459,38,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.2565431594848633,39,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.3399994373321533,40,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.423330307006836,41,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.5067524909973145,42,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.590416669845581,43,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.673760414123535,44,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.7571604251861572,45,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.8408188819885254,46,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.9238996505737305,47,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.0076563358306885,48,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.091310262680054,49,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.174808502197266,50,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.258377552032471,51,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.342029809951782,52,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.425252437591553,53,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.509476184844971,54,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.592354774475098,55,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.6753990650177,56,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.7592613697052,57,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.8433873653411865,58,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.926094055175781,59,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.009959936141968,60,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.093193769454956,61,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.176532506942749,62,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.260101079940796,63,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.344099521636963,64,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.427931547164917,65,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.510243654251099,66,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.594214916229248,67,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.67695164680481,68,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.761293411254883,69,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.844022035598755,70,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.927721261978149,71,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Monitoring thermals... nominal. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+6.011292934417725,72,demo,0.9,,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.111487150192261,73,demo,0.9,0.43475,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.211915493011475,74,demo,0.9,0.43625,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.31177020072937,75,demo,0.9,0.43775,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.411675214767456,76,demo,0.9,0.436,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.5119850635528564,77,demo,0.9,0.4365,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.612272262573242,78,demo,0.9,0.43725,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.713587522506714,79,demo,0.9,0.4385,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.8154377937316895,80,demo,0.9,0.43625,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.914953947067261,81,demo,0.9,0.43875,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.0157575607299805,82,demo,0.9,0.437,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.115031480789185,83,demo,0.9,0.4385,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.215222120285034,84,demo,0.9,0.43875,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.31530499458313,85,demo,0.9,0.43875,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.4152820110321045,86,demo,0.9,0.43675,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.515594005584717,87,demo,0.9,0.4385,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.61586332321167,88,demo,0.9,0.436,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.715780019760132,89,demo,0.9,0.4355,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.8162453174591064,90,demo,0.9,0.438,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.916143417358398,91,demo,0.9,0.438,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.016449689865112,92,demo,0.9,0.43775,SCENARIO_DROP,SCENARIO_DROP,Ghost muted safety | FAILSAFE(OVERHEAT): drop payload now. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.116693019866943,93,demo,0.9,0.43825,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.216565608978271,94,demo,0.9,0.435,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.31655764579773,95,demo,0.9,0.436,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.416643381118774,96,demo,0.9,0.43725,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.517970323562622,97,demo,0.9,0.43775,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.619215965270996,98,demo,0.9,0.4345,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.719496488571167,99,demo,0.9,0.43525,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.81997537612915,100,demo,0.9,0.43575,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.919745922088623,101,demo,0.9,0.437,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.019922256469727,102,demo,0.9,0.43925,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.119683265686035,103,demo,0.9,0.43325,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.22019624710083,104,demo,0.9,0.43575,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.320724964141846,105,demo,0.9,0.43775,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.421426773071289,106,demo,0.9,0.43525,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.521136999130249,107,demo,0.9,0.4365,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.621529817581177,108,demo,0.9,0.43775,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.72160816192627,109,demo,0.9,0.43325,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.821695566177368,110,demo,0.9,0.437,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.922680854797363,111,demo,0.9,0.43475,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.022527933120728,112,demo,0.9,0.434,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.122634172439575,113,demo,0.9,0.4355,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.223204612731934,114,demo,0.9,0.4355,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.324691772460938,115,demo,0.9,0.436,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.422812938690186,116,demo,0.9,0.43725,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.522918224334717,117,demo,0.9,0.4345,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.623216390609741,118,demo,0.9,0.436,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.723358869552612,119,demo,0.9,0.43375,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.823338747024536,120,demo,0.9,0.43725,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.92308235168457,121,demo,0.9,0.43775,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.023890495300293,122,demo,0.9,0.43525,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(OVERHEAT): return home for recharge. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.124366521835327,123,demo,0.9,0.4355,SCENARIO_RECHARGE,SCENARIO_RECHARGE,Ghost muted safety | RECHARGE: safe mode enabled. End demo. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u

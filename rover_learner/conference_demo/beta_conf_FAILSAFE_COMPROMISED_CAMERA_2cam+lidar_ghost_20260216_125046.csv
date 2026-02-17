@@ -1,0 +1,158 @@
+ts,frame_id,pred_class,pred_conf,distance_m,proposed_action,final_action,reason,safety_json,human_label
+0.0024700164794921875,0,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.08565187454223633,1,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.1690351963043213,2,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.2514054775238037,3,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.33592867851257324,4,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.4189913272857666,5,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.502178430557251,6,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.5856537818908691,7,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.6690654754638672,8,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.7524862289428711,9,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.8361279964447021,10,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+0.9193747043609619,11,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.0029957294464111,12,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.0864439010620117,13,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.1695475578308105,14,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.252925157546997,15,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.3367419242858887,16,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.4201838970184326,17,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.5032813549041748,18,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.5871050357818604,19,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.6706609725952148,20,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.7539303302764893,21,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.8374569416046143,22,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+1.9208738803863525,23,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.004305124282837,24,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.0877561569213867,25,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.1709132194519043,26,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.2548277378082275,27,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.3377296924591064,28,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.421602964401245,29,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.504991292953491,30,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.588446617126465,31,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.671597957611084,32,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.7549684047698975,33,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.8386969566345215,34,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+2.922584295272827,35,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.0057926177978516,36,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.089362144470215,37,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.1726319789886475,38,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.2560880184173584,39,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.3393266201019287,40,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.422983407974243,41,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.5064244270324707,42,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.5898945331573486,43,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.6729936599731445,44,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.7568836212158203,45,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.83994722366333,46,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+3.9237349033355713,47,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.007377624511719,48,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.090703248977661,49,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.174290657043457,50,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.258006572723389,51,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.3406081199646,52,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.4245522022247314,53,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.508075475692749,54,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.591618299484253,55,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.67484974861145,56,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.758478879928589,57,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.842353820800781,58,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+4.925511598587036,59,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.008940696716309,60,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.092068910598755,61,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.175933122634888,62,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.259110927581787,63,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.3432512283325195,64,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.426355838775635,65,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.509822368621826,66,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.592820405960083,67,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.676551342010498,68,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.761474847793579,69,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.843743324279785,70,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+5.926923036575317,71,demo,0.9,,SCENARIO_SEARCH,SCENARIO_SEARCH,Ghost muted safety | Dual camera nominal. Searching for regolith. | mode=SystemMode.DEGRADED cams=1 lidar=False,,u
+6.010190963745117,72,demo,0.9,,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.095531702041626,73,demo,0.9,0.435,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.179577112197876,74,demo,0.9,0.43825,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.26235556602478,75,demo,0.9,0.43825,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.346558094024658,76,demo,0.9,0.438,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.429798364639282,77,demo,0.9,0.437,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.513684272766113,78,demo,0.9,0.435,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.598119020462036,79,demo,0.9,0.43925,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.680813550949097,80,demo,0.9,0.436,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.764729022979736,81,demo,0.9,0.43825,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.846603631973267,82,demo,0.9,0.43825,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+6.931142330169678,83,demo,0.9,0.436,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.013763189315796,84,demo,0.9,0.43825,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.0980024337768555,85,demo,0.9,0.43775,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.1819071769714355,86,demo,0.9,0.438,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.264706134796143,87,demo,0.9,0.4355,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.348716735839844,88,demo,0.9,0.4355,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.430914640426636,89,demo,0.9,0.437,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.515740156173706,90,demo,0.9,0.4375,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.599083423614502,91,demo,0.9,0.43575,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.682836532592773,92,demo,0.9,0.43375,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.764960527420044,93,demo,0.9,0.4375,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.848954200744629,94,demo,0.9,0.4375,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+7.931930065155029,95,demo,0.9,0.435,SCENARIO_SCOOP,SCENARIO_SCOOP,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.015747547149658,96,demo,0.9,0.436,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.099839925765991,97,demo,0.9,0.4365,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.183147668838501,98,demo,0.9,0.43775,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.26593017578125,99,demo,0.9,0.43475,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.349873065948486,100,demo,0.9,0.43475,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.433832168579102,101,demo,0.9,0.43425,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.516623258590698,102,demo,0.9,0.43625,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.60082721710205,103,demo,0.9,0.438,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.684393644332886,104,demo,0.9,0.43825,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.767740249633789,105,demo,0.9,0.4355,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.85093879699707,106,demo,0.9,0.4355,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+8.934443235397339,107,demo,0.9,0.438,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.01808214187622,108,demo,0.9,0.43525,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.10195541381836,109,demo,0.9,0.43525,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.183578729629517,110,demo,0.9,0.43775,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.268507480621338,111,demo,0.9,0.43525,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.352216243743896,112,demo,0.9,0.43525,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.435397148132324,113,demo,0.9,0.4345,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.518852233886719,114,demo,0.9,0.43825,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.602256298065186,115,demo,0.9,0.43475,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.684563636779785,116,demo,0.9,0.4375,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.769418001174927,117,demo,0.9,0.4365,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.852445602416992,118,demo,0.9,0.4365,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+9.935982465744019,119,demo,0.9,0.435,SCENARIO_DEPOSIT,SCENARIO_DEPOSIT,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.019648790359497,120,demo,0.9,0.43925,SCENARIO_HOME,SCENARIO_HOME,Ghost muted safety | FAILSAFE(CAM): camera compromised → continue with 1 cam + LiDAR. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.103362560272217,121,demo,0.9,0.437,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.186371564865112,122,demo,0.9,0.434,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.269400119781494,123,demo,0.9,0.43775,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.353447914123535,124,demo,0.9,0.43775,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.437127351760864,125,demo,0.9,0.4365,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.520378351211548,126,demo,0.9,0.438,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.60398817062378,127,demo,0.9,0.438,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.687612771987915,128,demo,0.9,0.43425,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.770287990570068,129,demo,0.9,0.437,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.853184938430786,130,demo,0.9,0.437,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+10.938418626785278,131,demo,0.9,0.43475,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.020944118499756,132,demo,0.9,0.4375,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.105975151062012,133,demo,0.9,0.43825,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.188889980316162,134,demo,0.9,0.4385,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.27184796333313,135,demo,0.9,0.43725,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.354084253311157,136,demo,0.9,0.43725,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.438998699188232,137,demo,0.9,0.43975,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.522052526473999,138,demo,0.9,0.43475,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.605757474899292,139,demo,0.9,0.43525,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.688402891159058,140,demo,0.9,0.4345,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.77174973487854,141,demo,0.9,0.438,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.854920387268066,142,demo,0.9,0.438,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+11.939984798431396,143,demo,0.9,0.43725,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.022773027420044,144,demo,0.9,0.43925,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.106748819351196,145,demo,0.9,0.43475,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.189833164215088,146,demo,0.9,0.4375,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.273570775985718,147,demo,0.9,0.43875,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.356201410293579,148,demo,0.9,0.43875,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.440032243728638,149,demo,0.9,0.43525,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.524423360824585,150,demo,0.9,0.43525,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.606632709503174,151,demo,0.9,0.437,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.690037727355957,152,demo,0.9,0.434,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.77409291267395,153,demo,0.9,0.439,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.857913732528687,154,demo,0.9,0.43925,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+12.941417694091797,155,demo,0.9,0.43925,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
+13.024055480957031,156,demo,0.9,0.43825,SCENARIO_RETURN_HOME,SCENARIO_RETURN_HOME,Ghost muted safety | Return to base for troubleshooting camera. | mode=SystemMode.DEGRADED cams=1 lidar=True,,u
