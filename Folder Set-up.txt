@@ -1,0 +1,32 @@
+folder setup:
+
+* state publisher:
+ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(cat ~/Desktop/mycobot_attachments/mycobot_final.urdf)"
+
+
+/home/isam/Desktop/rover_learner/   <-- Root of project
+├──mycobotfinal.urdf 
+├── lidar_provider.py               
+├── camera_provider.py             
+├── two_camera_provider.py          
+├── rl_safety_supervisor.py         
+├── demo_scripts (twocamdemo 1 and 2, cobot_simulator_advanced, cobot_advanced_demo_2)
+└── conference_demo/                
+│   └── master_controller.py        
+│    
+/home/isam/Desktop/rover_learner_gripper/
+│
+│
+├──same provider scripts
+├──gripper_demo.py
+│
+│
+│
+/home/isam/Desktop/mycobot_attachments/
+│
+│
+├──mycobotfinal.urdf (modified version that uses gripper)
+│
+├──test_gripper.py
+├──gripper .dae files from repo
+│
