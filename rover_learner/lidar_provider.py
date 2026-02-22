@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
-"""lidar_provider.py (rover_learner)
+"""
+lidar_provider.py (rover_learner)
 
-Live LiDAR support.
-Includes a hybrid provider that supports:
-  1. ROS2 /scan (preferred if available)
-  2. Direct Serial/USB RPLidar (fallback with FAST Auto-Baud detection)
-
-Unit-testable aspects:
-  - min_distance_from_scan() pure function
-  - MockLidarProvider
+UNIVERSAL PROVIDER
+- Includes: Serial (C1), ROS 2, and Mock providers.
+- Essential for running unit tests.
 """
 
 from __future__ import annotations
@@ -17,17 +13,19 @@ import math
 import time
 import threading
 from dataclasses import dataclass
-from typing import List, Optional, Protocol, Any, Sequence, Tuple
+from typing import Optional, Protocol, Sequence
 
-# Try to import providers to detect what is available
+# 1. ROS 2 Imports (Optional)
 try:
     import rclpy
     from rclpy.node import Node
+    from rclpy.qos import qos_profile_sensor_data
     from sensor_msgs.msg import LaserScan
     HAS_ROS2 = True
 except ImportError:
     HAS_ROS2 = False
 
+# 2. Serial Imports (roboticia / rplidar)
 try:
     from rplidar import RPLidar, RPLidarException
     HAS_RPLIDAR = True
@@ -37,12 +35,13 @@ except ImportError:
 
 class LidarProvider(Protocol):
     def get_distance_m(self) -> Optional[float]:
-        """Return minimum forward distance in meters (or None if unavailable)."""
         ...
+    def close(self): ...
 
 
 @dataclass(frozen=True)
 class LaserScanLike:
+    """Helper for non-ROS usage to mimic ROS message structure."""
     angle_min: float
     angle_increment: float
     ranges: Sequence[float]
@@ -50,239 +49,143 @@ class LaserScanLike:
     range_max: float = 100.0
 
 
-def min_distance_from_scan(
-    scan: LaserScanLike,
-    forward_half_angle_deg: float = 15.0,
-    invalid_values: Tuple[float, ...] = (0.0,),
-) -> Optional[float]:
-    """Compute min distance within a forward cone from a dense scan array."""
-    half = math.radians(float(forward_half_angle_deg))
-    best: Optional[float] = None
+def min_distance_from_scan(scan: LaserScanLike, forward_half_angle_deg: float = 20.0) -> Optional[float]:
+    """Scans the forward cone (+/- 20 deg) for the closest object."""
+    min_dist = float('inf')
+    found_valid = False
+    half_angle_rad = math.radians(forward_half_angle_deg)
+    
+    current_angle = scan.angle_min
+    for r in scan.ranges:
+        # Normalize angle to -pi..pi
+        norm_angle = math.atan2(math.sin(current_angle), math.cos(current_angle))
+        
+        if abs(norm_angle) < half_angle_rad:
+            # Filter noise (0.001) and infinity
+            if r > 0.001 and not math.isinf(r) and not math.isnan(r):
+                if r < min_dist:
+                    min_dist = r
+                    found_valid = True
+        current_angle += scan.angle_increment
 
-    for i, r in enumerate(scan.ranges):
-        if r is None:
-            continue
-        try:
-            r = float(r)
-        except Exception:
-            continue
-        if math.isnan(r) or math.isinf(r):
-            continue
-        if r in invalid_values:
-            continue
-        if r < float(scan.range_min) or r > float(scan.range_max):
-            continue
-
-        angle = float(scan.angle_min) + i * float(scan.angle_increment)
-        # normalize angle to [-pi, pi]
-        angle = math.atan2(math.sin(angle), math.cos(angle))
-        if abs(angle) > half:
-            continue
-
-        if best is None or r < best:
-            best = r
-
-    return best
+    return min_dist if found_valid else None
 
 
+# =========================================================
+# 1. MOCK PROVIDER (REQUIRED FOR TESTS)
+# =========================================================
 class MockLidarProvider:
-    def __init__(self, distance_m: Optional[float] = 2.0):
-        self.distance_m = distance_m
+    """Fake Lidar for testing without hardware."""
+    def __init__(self, static_dist: float = 1.0):
+        self.d = static_dist
+        
     def get_distance_m(self) -> Optional[float]:
-        return self.distance_m
+        return self.d
+        
+    def close(self):
+        pass
 
 
-class ROS2LaserScanProvider:
+# =========================================================
+# 2. SERIAL PROVIDER (FOR JETSON / C1)
+# =========================================================
+class SerialRPLidarProvider:
     """
-    Hybrid Provider:
-    - Attempts to use ROS2 ('rclpy') first.
-    - If ROS2 is missing, falls back to direct 'rplidar' serial driver.
+    Direct Hardware Connection.
+    Hardcoded for Slamtec C1: Port=/dev/ttyUSB0, Baud=460800
     """
-
-    def __init__(self, topic: str = "/scan", forward_half_angle_deg: float = 15.0):
-        self.topic = str(topic)
-        self.forward_half_angle_deg = float(forward_half_angle_deg)
+    def __init__(self, port: str = "/dev/ttyUSB0", baudrate: int = 460800):
+        if not HAS_RPLIDAR:
+            raise RuntimeError("Missing driver! Run: pip3 install rplidar-roboticia")
+            
         self._latest_distance: Optional[float] = None
-        self._started = False
-        self._thread: Optional[threading.Thread] = None
-        self._stop_event = threading.Event()
-        self._mode = "none"  # 'ros2' or 'serial'
-
-        self.serial_port = "/dev/ttyUSB0" 
-        # C1 uses 460800. We prioritize it to save time during checks.
-        self.baud_candidates = [460800, 256000, 115200]
-
-    def start(self) -> None:
-        if self._started:
-            return
-
-        # 1. Try ROS 2
-        if HAS_ROS2:
-            try:
-                self._start_ros2()
-                self._mode = "ros2"
-                self._started = True
-                print(f"[lidar] Started via ROS2 topic {self.topic}")
-                return
-            except Exception as e:
-                print(f"[lidar] ROS2 failed to init: {e}. Trying fallback...")
+        self._running = True
+        self.port = port
+        self.baudrate = baudrate
         
-        # 2. Try Direct Serial (RPLidar)
-        if HAS_RPLIDAR:
-            try:
-                self._start_serial()
-                self._mode = "serial"
-                self._started = True
-                print(f"[lidar] Starting Direct Serial ({self.serial_port})...")
-                return
-            except Exception as e:
-                raise RuntimeError(f"Failed to start RPLidar serial driver: {e}") from e
-
-        # 3. Failure
-        raise RuntimeError(
-            "Could not start LiDAR. \n"
-            " - ROS2 not found (checked for 'rclpy').\n"
-            " - RPLidar library not found (checked for 'rplidar').\n"
-            "Fix: 'pip3 install rplidar-roboticia' OR install ROS2."
-        )
-
-    def _start_ros2(self):
-        rclpy.init(args=None)
-        self._rclpy = rclpy
-        
-        class _ScanNode(Node):
-            def __init__(self, outer: "ROS2LaserScanProvider"):
-                super().__init__("rover_learner_lidar_provider")
-                self.outer = outer
-                self.create_subscription(LaserScan, outer.topic, self._cb, 10)
-
-            def _cb(self, msg):
-                scan = LaserScanLike(
-                    angle_min=float(msg.angle_min),
-                    angle_increment=float(msg.angle_increment),
-                    ranges=list(msg.ranges),
-                    range_min=float(msg.range_min),
-                    range_max=float(msg.range_max),
-                )
-                self.outer._latest_distance = min_distance_from_scan(scan, self.outer.forward_half_angle_deg)
-
-        self._node = _ScanNode(self)
-        self._thread = threading.Thread(target=rclpy.spin, args=(self._node,), daemon=True)
-        self._thread.start()
-
-    def _start_serial(self):
-        self._stop_event.clear()
+        print(f"[Lidar] Connecting to {port} at {baudrate} baud...")
         self._thread = threading.Thread(target=self._serial_worker, daemon=True)
         self._thread.start()
 
     def _serial_worker(self):
         lidar = None
-        half_rad = math.radians(self.forward_half_angle_deg)
-        
-        # --- Connection / Auto-Baud Phase ---
-        connected = False
-        for baud in self.baud_candidates:
-            if self._stop_event.is_set(): break
+        while self._running:
             try:
-                # print(f"[lidar] Probe {baud} baud...")
-                lidar = RPLidar(self.serial_port, baudrate=baud, timeout=1.0)
-                info = lidar.get_info() 
-                print(f"[lidar] Connected at {baud}! Info: {info}")
-                connected = True
-                break
+                lidar = RPLidar(self.port, baudrate=self.baudrate)
+                # max_buf_meas=500 keeps latency low
+                for scan in lidar.iter_scans(max_buf_meas=500):
+                    if not self._running: break
+                    
+                    min_d = float('inf')
+                    found = False
+                    
+                    for (_, angle, dist_mm) in scan:
+                        if dist_mm == 0: continue
+                        
+                        # RPLidar Angle: 0=Front, increases clockwise
+                        # Check front cone: 0-20 degrees OR 340-360 degrees
+                        if angle < 20 or angle > 340:
+                            d_m = dist_mm / 1000.0
+                            if d_m < min_d:
+                                min_d = d_m
+                                found = True
+                                
+                    if found:
+                        self._latest_distance = min_d
+                    else:
+                        self._latest_distance = None
+
             except Exception as e:
-                if lidar:
-                    try:
+                # Wait before retrying to prevent spamming logs
+                time.sleep(1.0)
+                try:
+                    if lidar:
                         lidar.stop()
                         lidar.disconnect()
-                    except:
-                        pass
+                except: pass
                 lidar = None
-                time.sleep(0.05)
-
-        if not connected or lidar is None:
-            print("[lidar] Could not connect to any supported baud rate within timeout.")
-            return
-
-        # --- Clean Start Sequence ---
-        # Critical for C1/S1 high-speed sensors to prevent "Descriptor mismatch"
-        try:
-            lidar.stop()           # Stop any previous scan
-            lidar.stop_motor()     # Spin down
-            time.sleep(0.1)
-            lidar.clean_input()    # Flush garbage
-            lidar.start_motor()    # Spin up
-            time.sleep(0.1)
-        except Exception as e:
-            print(f"[lidar] Warning during clean start: {e}")
-
-        # --- Scanning Phase ---
-        lidar.timeout = 2.0
-        
-        while not self._stop_event.is_set():
-            try:
-                # max_buf_meas=500 helps latency. 
-                # If mismatch happens, we catch RPLidarException below.
-                for scan in lidar.iter_scans(max_buf_meas=500, min_len=5):
-                    if self._stop_event.is_set():
-                        break
-                    
-                    min_d_mm = None
-                    for (_, angle_deg, dist_mm) in scan:
-                        if dist_mm <= 0: continue
-                        
-                        a = angle_deg
-                        if a > 180: a -= 360
-                        rad = math.radians(a)
-                        
-                        if abs(rad) <= half_rad:
-                            if min_d_mm is None or dist_mm < min_d_mm:
-                                min_d_mm = dist_mm
-                    
-                    if min_d_mm is not None:
-                        self._latest_distance = min_d_mm / 1000.0
-                        
-            except RPLidarException as e:
-                print(f"[lidar] Resyncing ({e})...")
-                try:
-                    lidar.stop()
-                    lidar.clean_input()
-                    # Don't sleep too long, just enough to clear buffer
-                except:
-                    pass
-                continue 
-                
-            except Exception as e:
-                print(f"[lidar] Critical serial worker error: {e}")
-                # Try to reconnect or break? Breaking usually safer to avoid spam.
-                break
-        
-        # Cleanup
-        if lidar:
-            try:
-                lidar.stop()
-                lidar.stop_motor()
-                lidar.disconnect()
-            except:
-                pass
 
     def get_distance_m(self) -> Optional[float]:
         return self._latest_distance
 
-    def close(self) -> None:
-        if not self._started:
-            return
-            
-        self._stop_event.set()
+    def close(self):
+        self._running = False
+        if self._thread.is_alive():
+            self._thread.join(timeout=1.0)
+
+
+# =========================================================
+# 3. ROS 2 PROVIDER (OPTIONAL)
+# =========================================================
+class ROS2LaserScanProvider:
+    """Standard ROS 2 Subscriber"""
+    def __init__(self, topic: str = "/scan"):
+        if not HAS_ROS2: raise RuntimeError("ROS 2 not installed")
+        self._latest_distance = None
+        self._last_msg_time = 0.0
+        self._lock = threading.Lock()
         
-        if self._mode == "ros2":
-            try:
-                self._node.destroy_node()
-                self._rclpy.shutdown()
-            except Exception:
-                pass
-        
-        if self._thread is not None and self._thread.is_alive():
-            self._thread.join(timeout=2.0)
-            
-        self._started = False
+        threading.Thread(target=self._ros_worker, daemon=True).start()
+        print(f"[Lidar] Listening to ROS 2 topic: {topic}")
+
+    def _ros_worker(self):
+        if not rclpy.ok(): rclpy.init()
+        node = rclpy.create_node("lidar_listener_" + str(int(time.time())))
+        node.create_subscription(LaserScan, "/scan", self._on_scan, qos_profile_sensor_data)
+        try: rclpy.spin(node)
+        except: pass
+        finally: node.destroy_node()
+
+    def _on_scan(self, msg):
+        wrapper = LaserScanLike(msg.angle_min, msg.angle_increment, msg.ranges)
+        d = min_distance_from_scan(wrapper)
+        with self._lock:
+            self._latest_distance = d
+            self._last_msg_time = time.time()
+
+    def get_distance_m(self):
+        with self._lock:
+            if time.time() - self._last_msg_time > 2.0: return None
+            return self._latest_distance
+    
+    def close(self): pass

@@ -1,0 +1,10 @@
+ttyUSB0 lidar serial: b0db6b8d287fef1194d71e1cedd322a4
+ttyUSB1 lidar serial: 6426885a2c7fef11ae3c201cedd322a4
+
+ls -l /dev/serial/by-id:
+
+total 0
+lrwxrwxrwx 1 root root 13 Feb 17 16:44 usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_6426885a2c7fef11ae3c201cedd322a4-if00-port0 -> ../../ttyUSB1
+
+lrwxrwxrwx 1 root root 13 Dec 31  1969 usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_b0db6b8d287fef1194d71e1cedd322a4-if00-port0 -> ../../ttyUSB0
+
