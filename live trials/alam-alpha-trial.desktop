@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ALAM Alpha Trial
+Comment=Run alpha_trial.py (YOLO) with RViz pause
+Exec=__REPO_ROOT__/launchers/alpha_trial.sh
+Terminal=true
+Icon=applications-science
+Categories=Development;Robotics;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ALAM Beta Trial
+Comment=Run beta_trial.py (YOLO) with RViz pause
+Exec=__REPO_ROOT__/launchers/beta_trial.sh
+Terminal=true
+Icon=applications-science
+Categories=Development;Robotics;
