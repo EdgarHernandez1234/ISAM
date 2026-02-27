@@ -1,0 +1,2 @@
+window_start_ts,window_end_ts,window_s,frames,correct,incorrect,accuracy,t_first_harvestable_s,t_first_human_s,t_first_object_s,t_first_cam_comp_s
+1772076053.757,1772076124.345,60.0,37,30,7,0.811,1.688,,6.578,
