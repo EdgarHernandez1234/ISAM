@@ -1,1 +1,1 @@
-Here we have files needed for personal device <-> jetson communication, using the gazebo moon environment
+Here we have files needed for personal device <-> jetson communication, using the gazebo moon environment. this process included docker containers, for both moon_bridge_tools and the dependencies required for the gazebo moon environment
