@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<robot name="alam_rover2">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.33" rpy="0 0 0"/>
+      <geometry><box size="1.20 0.78 0.24"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.33" rpy="0 0 0"/>
+      <geometry><box size="1.20 0.78 0.24"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="55.0"/>
+      <origin xyz="0 0 0.33" rpy="0 0 0"/>
+      <inertia ixx="3.5" ixy="0.0" ixz="0.0" iyy="8.0" iyz="0.0" izz="9.0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="base_link">
+    <self_collide>false</self_collide>
+    <visual>
+      <material>
+        <ambient>0.6 0.6 0.6 1.0</ambient>
+        <diffuse>0.6 0.6 0.6 1.0</diffuse>
+        <pbr>
+          <metal>
+            <albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Silver/Poliigon_MetalSteelBrushed_7174_BaseColor.jpg</albedo_map>
+            <normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Silver/Poliigon_MetalSteelBrushed_7174_Normal.jpg</normal_map>
+            <roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Silver/Poliigon_MetalSteelBrushed_7174_Roughness.jpg</roughness_map>
+            <metalness_map>file:///root/ws/assets/custom/rover_body_2/textures/Silver/Poliigon_MetalSteelBrushed_7174_Metallic.jpg</metalness_map>
+            <ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Silver/Poliigon_MetalSteelBrushed_7174_AmbientOcclusion.jpg</ambient_occlusion_map>
+          </metal>
+        </pbr>
+      </material>
+    </visual>
+  </gazebo>
+
+  <link name="mast_link">
+    <visual>
+      <origin xyz="0 0 0.40" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.04" length="0.80"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.40" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.04" length="0.80"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0.40" rpy="0 0 0"/>
+      <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+  <joint name="mast_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="mast_link"/>
+    <origin xyz="-0.42 0 0.45" rpy="0 0 0"/>
+  </joint>
+  <gazebo reference="mast_link">
+    <visual>
+      <material>
+        <ambient>0.35 0.35 0.35 1.0</ambient>
+        <diffuse>0.35 0.35 0.35 1.0</diffuse>
+        <pbr>
+          <metal>
+            <albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Plastic/Poliigon_PlasticMoldDryBlast_7495_BaseColor.jpg</albedo_map>
+            <normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Plastic/Poliigon_PlasticMoldDryBlast_7495_Normal.jpg</normal_map>
+            <roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Plastic/Poliigon_PlasticMoldDryBlast_7495_Roughness.jpg</roughness_map>
+            <metalness_map>file:///root/ws/assets/custom/rover_body_2/textures/Plastic/Poliigon_PlasticMoldDryBlast_7495_Metallic.jpg</metalness_map>
+            <ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Plastic/Poliigon_PlasticMoldDryBlast_7495_AmbientOcclusion.jpg</ambient_occlusion_map>
+          </metal>
+        </pbr>
+      </material>
+    </visual>
+  </gazebo>
+
+  <link name="arm_link">
+    <visual>
+      <origin xyz="0.20 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.08 0.05"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.20 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.40 0.08 0.05"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <origin xyz="0.20 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.03" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+    </inertial>
+  </link>
+  <joint name="arm_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="arm_link"/>
+    <origin xyz="0.46 0 0.30" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.50" upper="0.70" effort="60.0" velocity="0.8"/>
+  </joint>
+
+  <link name="bucket_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.18 0.34 0.14"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.18 0.34 0.14"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="2.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+  </link>
+  <joint name="bucket_joint" type="fixed">
+    <parent link="arm_link"/>
+    <child link="bucket_link"/>
+    <origin xyz="0.40 0 0" rpy="0 0 0"/>
+  </joint>
+  <gazebo reference="bucket_link">
+    <visual>
+      <material>
+        <ambient>0.55 0.45 0.10 1.0</ambient>
+        <diffuse>0.55 0.45 0.10 1.0</diffuse>
+        <pbr>
+          <metal>
+            <albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Gold/Poliigon_MetalGoldPaint_7253_BaseColor.jpg</albedo_map>
+            <normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Gold/Poliigon_MetalGoldPaint_7253_Normal.jpg</normal_map>
+            <roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Gold/Poliigon_MetalGoldPaint_7253_Roughness.jpg</roughness_map>
+            <metalness_map>file:///root/ws/assets/custom/rover_body_2/textures/Gold/Poliigon_MetalGoldPaint_7253_Metallic.jpg</metalness_map>
+            <ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Gold/Poliigon_MetalGoldPaint_7253_AmbientOcclusion.jpg</ambient_occlusion_map>
+          </metal>
+        </pbr>
+      </material>
+    </visual>
+  </gazebo>
+
+  <link name="solar_panel_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.70 0.44 0.02"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.70 0.44 0.02"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.8"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+  </link>
+  <joint name="solar_panel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="solar_panel_link"/>
+    <origin xyz="0 0 0.48" rpy="0 0 0"/>
+  </joint>
+  <gazebo reference="solar_panel_link">
+    <visual>
+      <material>
+        <ambient>0.20 0.20 0.25 1.0</ambient>
+        <diffuse>0.20 0.20 0.25 1.0</diffuse>
+        <pbr>
+          <metal>
+            <albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Slate/Poliigon_SlateFloorTile_7657_BaseColor.jpg</albedo_map>
+            <normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Slate/Poliigon_SlateFloorTile_7657_Normal.jpg</normal_map>
+            <roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Slate/Poliigon_SlateFloorTile_7657_Roughness.jpg</roughness_map>
+            <metalness_map>file:///root/ws/assets/custom/rover_body_2/textures/Slate/Poliigon_SlateFloorTile_7657_Metallic.jpg</metalness_map>
+            <ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Slate/Poliigon_SlateFloorTile_7657_AmbientOcclusion.jpg</ambient_occlusion_map>
+          </metal>
+        </pbr>
+      </material>
+    </visual>
+  </gazebo>
+
+  <link name="front_left_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="front_left_wheel_joint" type="continuous"><parent link="base_link"/><child link="front_left_wheel"/><origin xyz="0.45 0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="front_left_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <link name="mid_left_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="mid_left_wheel_joint" type="continuous"><parent link="base_link"/><child link="mid_left_wheel"/><origin xyz="0.0 0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="mid_left_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <link name="rear_left_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="rear_left_wheel_joint" type="continuous"><parent link="base_link"/><child link="rear_left_wheel"/><origin xyz="-0.45 0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="rear_left_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <link name="front_right_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="front_right_wheel_joint" type="continuous"><parent link="base_link"/><child link="front_right_wheel"/><origin xyz="0.45 -0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="front_right_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <link name="mid_right_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="mid_right_wheel_joint" type="continuous"><parent link="base_link"/><child link="mid_right_wheel"/><origin xyz="0.0 -0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="mid_right_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <link name="rear_right_wheel">
+    <visual><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></visual>
+    <collision><origin xyz="0 0 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.18" length="0.12"/></geometry></collision>
+    <inertial><mass value="4.0"/><origin xyz="0 0 0" rpy="1.5708 0 0"/><inertia ixx="0.04" ixy="0.0" ixz="0.0" iyy="0.04" iyz="0.0" izz="0.04"/></inertial>
+  </link>
+  <joint name="rear_right_wheel_joint" type="continuous"><parent link="base_link"/><child link="rear_right_wheel"/><origin xyz="-0.45 -0.44 0.0" rpy="0 0 0"/><axis xyz="0 1 0"/></joint>
+  <gazebo reference="rear_right_wheel"><mu1>1.10</mu1><mu2>0.95</mu2><self_collide>false</self_collide><visual><material><ambient>0.18 0.18 0.18 1.0</ambient><diffuse>0.18 0.18 0.18 1.0</diffuse><pbr><metal><albedo_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_COL_2K.jpg</albedo_map><normal_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_NRM_2K.jpg</normal_map><roughness_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_GLOSS_2K.jpg</roughness_map><ambient_occlusion_map>file:///root/ws/assets/custom/rover_body_2/textures/Ceramic/TilesCeramicHerringbone002_AO_2K.jpg</ambient_occlusion_map></metal></pbr></material></visual></gazebo>
+
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>front_left_wheel_joint</left_joint>
+      <left_joint>mid_left_wheel_joint</left_joint>
+      <left_joint>rear_left_wheel_joint</left_joint>
+      <right_joint>front_right_wheel_joint</right_joint>
+      <right_joint>mid_right_wheel_joint</right_joint>
+      <right_joint>rear_right_wheel_joint</right_joint>
+      <wheel_separation>0.88</wheel_separation>
+      <wheel_radius>0.18</wheel_radius>
+      <topic>cmd_vel_rover2</topic>
+      <odom_topic>odom_rover2</odom_topic>
+      <tf_topic>tf_rover2</tf_topic>
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <frame_id>odom_rover2</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+    </plugin>
+  </gazebo>
+</robot>
